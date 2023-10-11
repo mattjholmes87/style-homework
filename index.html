@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="icon" type="image/png" href="faviconboxicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="github.com/necolas/normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    table,
+    th,
+    tr,
+    td {
+      border: 2px solid silver;
+      border-collapse: collapse;
+      font-family: "Gill Sans";
+      color: black;
+      background-color: transparent;
+    }
+    strong {
+      background-color: transparent;
+    }
+    span {
+      background: transparent;
+    }
+    .right {
+      float: right;
+    }
+
+    .left {
+      float: left;
+    }
+
+    caption {
+      font-family: "Gill Sans";
+      font-size: 14px;
+      text-align: center;
+    }
+    p {
+      background-color: inherit;
+    }
+  </style>
+  <body>
+    <div class="banner">The Jump - Week 3 Homework</div>
+    <div class="case">
+      <div class="nav">
+        Links
+        <ul class="dropdown">
+          <li><a href="./index.html">Introduction</a></li>
+          <li><a href="./news.html">News</a></li>
+          <li>
+            <a
+              href="https://forecast7.com/en/40d71n74d01/new-york/"
+              target="_blank"
+              >Weather</a
+            >
+          </li>
+          <li><a href="./sport.html">Sport</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="flexcontainer">
+        <div class="box1">
+          <dt><b>GCSE Grades</b></dt>
+          <dd>Maths - Achieved a grade A</dd>
+          <dd>English - Achieved a grade AB</dd>
+          <dd>Science - Achieved a grade A*A*</dd>
+          <dd>Geograpghy - Achieved a grade A</dd>
+          <dd>History - Achieved a grade A</dd>
+          <dd>French - Achieved a grade A</dd>
+          <dd>Food - Achieved a grade A</dd>
+          <dd>German - Achieved a grade B</dd>
+        </div>
+        <div class="box2">
+          <a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/40d71n74d01/new-york/"
+            data-label_1="London"
+            data-label_2="WEATHER"
+            data-days="3"
+            data-theme="pure"
+            >London WEATHER</a
+          >
+          <script>
+            !(function (d, s, id) {
+              var js,
+                fjs = d.getElementsByTagName(s)[0];
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://weatherwidget.io/js/widget.min.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            })(document, "script", "weatherwidget-io-js");
+          </script>
+        </div>
+      </div>
+      <div class="bar1">
+        <table style="width: 80%; margin-left: auto; margin-right: auto">
+          <caption>
+            <strong class="caption">
+              Top ten of the 2012 Summer Olympics medal table</strong
+            >
+          </caption>
+          <tr>
+            <th
+              style="
+                width: 12.5%;
+                font-size: 14px;
+                background-color: rgb(244, 244, 244);
+              "
+            >
+              Rank &#8597;
+            </th>
+            <th
+              style="
+                width: 40%;
+                font-size: 14px;
+                background-color: rgb(244, 244, 244);
+              "
+            >
+              <span class="center">NOC</span><span class="right">&#8597;</span>​
+            </th>
+            <th style="width: 12.5%; background-color: gold; font-size: 14px">
+              <span class="center">Gold</span><span class="right">&#8597;</span>
+            </th>
+            <th style="width: 12.5%; background-color: silver; font-size: 14px">
+              <span class="center">Silver</span
+              ><span class="right">&#8597;</span>
+            </th>
+            <th
+              style="
+                width: 12.5%;
+                background-color: rgb(143, 79, 0);
+                font-size: 14px;
+              "
+            >
+              <span class="center">Bronze</span
+              ><span class="right">&#8597;</span>
+            </th>
+            <th
+              style="
+                width: 12.5%;
+                font-size: 14px;
+                background-color: rgb(244, 244, 244);
+              "
+            >
+              <span class="center">Total</span
+              ><span class="right">&#8597;</span>
+            </th>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">1</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./us.svg" alt="USA Flag" width="22px" />
+              <span style="color: #3750c3">United States</span> (USA)
+            </td>
+            <td style="text-align: center">46</td>
+            <td style="text-align: center">29</td>
+            <td style="text-align: center">29</td>
+            <td style="text-align: center">104</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">2</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./cn.svg" alt="China Flag" width="22px" />
+              <span style="color: #3750c3">China</span> (CHN)
+            </td>
+            <td style="text-align: center">38</td>
+            <td style="text-align: center">27</td>
+            <td style="text-align: center">23</td>
+            <td style="text-align: center">88</td>
+          </tr>
+          <tr style="background-color: rgba(204, 204, 255, 255)">
+            <td style="text-align: center">3</td>
+            <td
+              style="
+                text-align: left;
+                background-color: rgba(204, 204, 255, 255);
+              "
+            >
+              <img src="./gb.svg" alt="GBR Flag" width="22px" />
+              <span style="color: #3750c3">Great Britain</span> (GBR)*
+            </td>
+            <td style="text-align: center">29</td>
+            <td style="text-align: center">17</td>
+            <td style="text-align: center">19</td>
+            <td style="text-align: center">65</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">4</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./ru.svg" alt="Russia Flag" width="22px" />
+              <span style="color: #3750c3">Russia</span> (RUS)
+            </td>
+            <td style="text-align: center">24</td>
+            <td style="text-align: center">26</td>
+            <td style="text-align: center">32</td>
+            <td style="text-align: center">82</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">5</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./kr.svg" alt="South Korea Flag" width="22px" />
+              <span style="color: #3750c3">South Korea</span> (KOR)
+            </td>
+            <td style="text-align: center">13</td>
+            <td style="text-align: center">8</td>
+            <td style="text-align: center">7</td>
+            <td style="text-align: center">28</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">6</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./de.svg" alt="German Flag" width="22px" />
+              <span style="color: #3750c3">Germany</span> (GER)
+            </td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">19</td>
+            <td style="text-align: center">14</td>
+            <td style="text-align: center">44</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">7</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./fr.svg" alt="France Flag" width="22px" />
+              <span style="color: #3750c3">France</span> (FRA)
+            </td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">12</td>
+            <td style="text-align: center">34</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">8</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./it.svg" alt="Italy Flag" width="22px" />
+              <span style="color: #3750c3">Italy</span> (ITA)
+            </td>
+            <td style="text-align: center">8</td>
+            <td style="text-align: center">9</td>
+            <td style="text-align: center">11</td>
+            <td style="text-align: center">28</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">9</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./hu.svg" alt="Hungary Flag" width="22px" />
+              <span style="color: #3750c3">Hungary</span> (HUN)
+            </td>
+            <td style="text-align: center">8</td>
+            <td style="text-align: center">4</td>
+            <td style="text-align: center">5</td>
+            <td style="text-align: center">17</td>
+          </tr>
+          <tr style="background-color: rgb(244, 244, 244)">
+            <td style="text-align: center">10</td>
+            <td style="text-align: left; background-color: rgb(236, 236, 236)">
+              <img src="./au.svg" alt="Australia Flag" width="22px" />
+              <span style="color: #3750c3">Australia</span> (AUS)
+            </td>
+            <td style="text-align: center">7</td>
+            <td style="text-align: center">16</td>
+            <td style="text-align: center">12</td>
+            <td style="text-align: center">35</td>
+          </tr>
+          <tr style="background-color: rgb(224, 224, 224); text-align: center">
+            <td colspan="2">
+              <strong>Total (85 NOCs)</strong>
+            </td>
+            <td>302</td>
+            <td>304</td>
+            <td>356</td>
+            <td>962</td>
+          </tr>
+        </table>
+      </div>
+      <div class="bar2">
+        <p>
+          <strong>Metro Bank has struck a deal to raise extra funds </strong>
+          from investors that it said will secure its future. The deal was
+          announced late on Sunday after days of intense speculation about the
+          bank's financial position. The Bank of England reportedly asked larger
+          lenders if they were interested in buying Metro, while banks were said
+          to be eyeing up some of its assets. But on Sunday, Metro Bank said it
+          had raised £325m in new funding, as well as refinancing £600m of debt.
+          Metro's chief executive, Daniel Frumkin, said the deal marked "a new
+          chapter" for the troubled bank.
+        </p>
+      </div>
+    </div>
+    <div class="iconbox">
+      <div>
+        <a href="https://www.facebook.com"
+          ><img src="./facebookicon.png" alt="Facebook Icon" class="icon"
+        /></a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com"
+          ><img src="./instagramicon.png" alt="Instagram Icon" class="icon"
+        /></a>
+      </div>
+      <div>
+        <a href="https://www.twitter.com"
+          ><img src="./twittericon.webp" alt="Twitter/X Icon" class="icon"
+        /></a>
+      </div>
+    </div>
+
+    <div class="chatboxclosed"><a href="#">Chatbox</a></div>
+    <div class="chatboxopen">
+      <textarea
+        name="chattextarea"
+        placeholder="Chat to our specialists here..."
+        rows="16"
+      ></textarea>
+    </div>
+  </body>
+</html>

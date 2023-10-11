@@ -1,0 +1,266 @@
+* {
+  box-sizing: border-box;
+  background-color: #fbfcff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0px;
+}
+
+.case {
+  background-color: #f3f4f6;
+  width: 60%;
+  min-width: 400px;
+  height: 80%;
+  margin: 2em auto;
+  border: 2px solid #636d78;
+}
+.nav {
+  background-color: #0a254c;
+  border-bottom: 2px solid #636d78;
+  color: white;
+  text-align: center;
+}
+.dropdown {
+  display: none;
+}
+a {
+  text-decoration: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+.nav:hover ul {
+  display: initial;
+  background-color: #0a254c;
+}
+li {
+  background-color: #fcbc14;
+  list-style-type: "- ";
+  text-align: left;
+  padding-left: 10%;
+}
+li:hover {
+  list-style-type: "+ ";
+  color: #011a44;
+}
+.box1 {
+  text-align: center;
+  min-height: 50px;
+  width: 50%;
+  flex-wrap: wrap;
+  background-color: #fcbc14;
+  text-align: left;
+}
+.box2 {
+  text-align: center;
+  vertical-align: middle;
+  min-height: 50px;
+  width: 50%;
+  flex-wrap: wrap;
+  background-color: #f3f4f6;
+}
+div[class^="bar"] {
+  text-align: left;
+  min-height: 50px;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+}
+.flexcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.scorer .home {
+  font-size: 1em;
+  float: left;
+  background-color: #f3f4f6;
+}
+.scores {
+  background-color: #f3f4f6;
+}
+.scorer {
+  font-size: 0.7em;
+  text-align: left;
+  background-color: #f3f4f6;
+  padding-left: 2px;
+}
+.scorer .away {
+  font-size: 1em;
+  text-align: right;
+  float: right;
+  background-color: #f3f4f6;
+  padding-right: 2px;
+}
+dd {
+  background-color: inherit;
+  text-align: left;
+  margin: 4%;
+}
+dt {
+  background-color: inherit;
+  text-align: center;
+  padding-top: 4%;
+}
+.bar1 {
+  background-color: #0a254c;
+  color: #f3f4f6;
+}
+.bar2 {
+  background-color: #fcbc14;
+  text-align: left;
+}
+.bar3 {
+  background-color: #f3f4f6;
+  text-align: left;
+}
+b {
+  background-color: inherit;
+  font-size: 0.85em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 1000px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+iframe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+small,
+u,
+address,
+div {
+  background-color: inherit;
+}
+.signoff {
+  text-align: center;
+  font-size: 14px;
+}
+.banner {
+  background-color: #0a254c;
+  color: #f3f4f6;
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  position: sticky;
+  left: 0px;
+  top: 0px;
+  text-align: center;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  align-items: center;
+  background-color: #fbfcff;
+}
+.iconbox {
+  width: 44px;
+  border-width: 1px;
+  border-color: #636d78;
+  background-color: #fbfcff;
+  margin: 1px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+}
+.chatboxclosed {
+  background-color: #011a44;
+  text-align: center;
+  color: #f3f4f6;
+  width: 18%;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.chatboxopen {
+  background-color: #636d78;
+  text-align: center;
+  width: 18%;
+  height: 20vh;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: none;
+  overflow: auto;
+}
+.chatboxclosed:hover + .chatboxopen {
+  display: initial;
+}
+.chatboxopen:hover {
+  display: initial;
+}
+
+#chattextarea {
+  width: 100%;
+  height: 100%;
+  border: black;
+  border-width: 2px;
+  background-color: #636d78;
+  color: #f3f4f6;
+}
+.tandc {
+  background-color: transparent;
+  overflow: auto;
+  max-height: 10em;
+}
+.form,
+fieldset,
+label {
+  color: black;
+  background-color: transparent;
+}
+form {
+  padding: 10px;
+  background-color: #011a44;
+}
+.textarea {
+  padding-top: 10px;
+}
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 20vh;
+  border: 1px solid black;
+  resize: none;
+}
+legend {
+  background-color: rgb(210, 210, 210);
+  border: 1px solid black;
+}
+address,
+.phone,
+.email,
+.copy {
+  margin: 10px;
+}
